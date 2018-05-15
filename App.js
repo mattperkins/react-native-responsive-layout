@@ -11,6 +11,7 @@ export default class App extends React.Component {
           <Text>Hello</Text>
         </View>
       
+      
         <View 
           style={{backgroundColor: '#f333', height: '5%'}}>
         </View>
@@ -32,6 +33,7 @@ export default class App extends React.Component {
           </View>
         </View>
       
+      {/* pink safe block */}
         <View 
           style={{backgroundColor: '#f333', height: '5%'}}>
         </View>
