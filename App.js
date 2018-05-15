@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 export default class App extends React.Component {
   render() {
     return (
+      // master container
       <View style={{flex:1}}>
       
       {/* top block */}
