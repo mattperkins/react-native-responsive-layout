@@ -3,42 +3,30 @@ import { StyleSheet, Text, View } from 'react-native'
 
 export default class App extends React.Component {
   render() {
+    const boxes = [1,2,3,4,5,6,7,8]
     return (
       // master container
       <View style={{flex:1}}>
       
-      {/* top block */}
+      {/* top band */}
         <View 
-          style={[styles.container, {flex: 1, backgroundColor: '#f33'}, ]}>
-          <Text>Hello</Text>
+          style={{backgroundColor: '#ffc600', height: '10%'}}>
         </View>
-      
-      {/* middle band */}
+
+      {/* boxes */}
         <View 
-          style={{backgroundColor: '#f333', height: '5%'}}>
+          style={[styles.container, {flex: 1}, ]}>
+          {boxes.map(box => <View key={box} style={styles.boxContainer}>
+            <View style={styles.box}></View>
+          </View>)}
+          
         </View>
-      
-      {/* bottom panel */}
+    
+      {/* bottom band */}
         <View 
-          style={[styles.container, {flex: 1, backgroundColor: '#ff33'}, ]}>
-          <View style={styles.boxContainer}>
-            <View style={styles.box}></View>
-          </View>
-          <View style={styles.boxContainer}>
-            <View style={styles.box}></View>
-          </View>
-          <View style={styles.boxContainer}>
-            <View style={styles.box}></View>
-          </View>
-          <View style={styles.boxContainer}>
-            <View style={styles.box}></View>
-          </View>
+          style={{backgroundColor: '#ffc600', height: '5%'}}>
         </View>
-      
-      {/* pink safe block */}
-        <View 
-          style={{backgroundColor: '#f333', height: '5%'}}>
-        </View>
+
       </View>
     )
   }
@@ -54,7 +42,7 @@ const styles = StyleSheet.create({
   },
   boxContainer: {
     width: '50%',
-    height: '50%',
+    height: '25%',
     padding: 5,
   },
   box: {
