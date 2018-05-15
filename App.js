@@ -32,7 +32,9 @@ export default class App extends React.Component {
           </View>
         </View>
       
-        
+        <View 
+          style={{backgroundColor: '#f333', height: '5%'}}>
+        </View>
       </View>
     )
   }
