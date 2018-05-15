@@ -7,7 +7,7 @@ export default class App extends React.Component {
       <View style={{flex:1}}>
       
         <View 
-          style={[styles.container, {flex: 3, backgroundColor: '#f33'}, ]}>
+          style={[styles.container, {flex: 2, backgroundColor: '#f33'}, ]}>
           <Text>Hello</Text>
         </View>
       
@@ -18,7 +18,10 @@ export default class App extends React.Component {
       {/* bottom panel */}
         <View 
           style={[styles.container, {flex: 1, backgroundColor: '#ff33'}, ]}>
-          <Text>World!!!</Text>
+          <View style={{flex: 1, backgroundColor: '#292929'}}></View>
+          <View style={{flex: 1, backgroundColor: '#292929'}}></View>
+          <View style={{flex: 1, backgroundColor: '#292929'}}></View>
+          <View style={{flex: 1, backgroundColor: '#292929'}}></View>
         </View>
       
       </View>
@@ -30,6 +33,9 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    padding: 5,
   },
   box: {
     width: '50%',
