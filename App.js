@@ -15,6 +15,7 @@ export default class App extends React.Component {
           style={{backgroundColor: '#f333', height: '5%'}}>
         </View>
       
+      {/* bottom panel */}
         <View 
           style={[styles.container, {flex: 1, backgroundColor: '#ff33'}, ]}>
           <Text>World!!!</Text>
@@ -30,4 +31,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  box: {
+    width: '50%',
+    height: '50%',
+    margin: 5,
+  }
 })
