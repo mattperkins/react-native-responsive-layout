@@ -11,7 +11,7 @@ export default class App extends React.Component {
           <Text>Hello</Text>
         </View>
       
-      
+      {/* add middle band */}
         <View 
           style={{backgroundColor: '#f333', height: '5%'}}>
         </View>
