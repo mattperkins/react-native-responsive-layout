@@ -6,12 +6,13 @@ export default class App extends React.Component {
     return (
       <View style={{flex:1}}>
       
+      {/* top block */}
         <View 
           style={[styles.container, {flex: 1, backgroundColor: '#f33'}, ]}>
           <Text>Hello</Text>
         </View>
       
-      {/* add middle band */}
+      {/* middle band */}
         <View 
           style={{backgroundColor: '#f333', height: '5%'}}>
         </View>
