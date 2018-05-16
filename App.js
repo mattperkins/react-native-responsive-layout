@@ -10,7 +10,7 @@ export default class App extends React.Component {
       
       {/* top band */}
         <View 
-          style={{backgroundColor: '#ffc600', height: '10%'}}>
+          style={{backgroundColor: '#fff', height: '10%'}}>
         </View>
 
       {/* boxes */}
