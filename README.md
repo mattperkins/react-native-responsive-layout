@@ -4,6 +4,14 @@
 
 ### `npm run ios`
 
+# \\\\\\\\\
+
+# Top & Bottom 'band' + array of Blocks
+# 50/50 split
+
+# \\\\\\\\\
+
+
 # ENDPOINTS:
 ```
 exp://192.168.0.2:19000
